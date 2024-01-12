@@ -1,0 +1,140 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", "sans-serif";
+}
+body { font-size: 12px; color: #333; min-width: 1000px; }
+ul,ol,li { list-style: none; }
+
+a { color:#333; text-decoration: none; }
+a:link, a:active, a:visited {
+    color: #333; text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+
+/* 상단 플로우 띠배너 */
+#top_flow{
+    position: relative;
+    background-color: #000;
+    height: 38px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+    #top_flow a{
+        white-space: nowrap;
+        line-height: 38px;
+        color: white;
+        font-size: 13px;
+    }
+
+/* 헤더 시작 */
+header{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    margin: 0 auto;
+    z-index: 998;
+    background-color: aqua;
+}
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+
+    .nav_mid{
+        width: 567px;
+        margin: 0 auto;
+    }
+
+        .main_menu, .bar, .sub_menu{
+            float: left;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            overflow: hidden;
+            padding: 0px;
+        }
+
+            .main_menu strong{
+                font-size: 15px;
+                margin: 0 10px;
+                border-top: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .main_menu strong:hover{
+                border-top: 3px solid;
+                border-bottom: 3px solid;
+            }
+
+                .drop_down{
+                    display: none;
+                }
+                .drop_down.open{
+                    display: block;
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 100%;
+                    padding: 5px 0 0 0;
+                    background-color: olive;
+                }
+                    .drop_down_img{
+                        width: 1000px;
+                        margin: 0 auto;
+                    }
+                    .drop_img{
+                        width: 320px;
+                        float: left;
+                        margin: 0 1px;
+                        transition: all 0.5s;
+                    }
+                    .drop_img:hover{
+                        filter: brightness(0.7);
+                    }
+
+
+        .bar{
+            margin-right: 10px;
+            color: #eee;
+        }
+        .sub_menu{
+            margin: 0 10px 0 0;
+            cursor: pointer;
+        }
+
+    .nav_right{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        top: 17px;
+        right: 45px;
+        width: 100px;
+    }
+        .nav_right div{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+        }
+
+
+
+/* 메인 시작 */
+main{
+    width: 100%;
+}
+    .main_b_wrap{
+        width: 100%;
+        min-height: 780px;
+        background: url(../img/main_b_01.jpg) no-repeat 50% 50%/cover;
+    }
+
