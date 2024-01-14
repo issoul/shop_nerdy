@@ -1,7 +1,8 @@
 
 // 헤더 메뉴 드롭다운 //
+
 const ddup = document.querySelectorAll('.drop_up');
-const ddown = document.querySelectorAll('.drop_down');
+const ddown = document.querySelectorAll('.drop_body');
 
 
 
@@ -42,5 +43,3 @@ const ddown = document.querySelectorAll('.drop_down');
         ddown[4].classList.remove('open');
     })
 
-
- 
