@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Pretendard", "sans-serif";
 }
-body { font-size: 12px; color: #333; min-width: 1000px; }
+body { font-size: 12px; color: #333; min-width: 1200px; }
 ul,ol,li { list-style: none; }
 
 a { color:#333; text-decoration: none; }
@@ -17,19 +17,27 @@ a:hover {
 }
 
 /* 상단 플로우 띠배너 */
-#top_flow{
-    position: relative;
-    background-color: #000;
+.top_flow{
+    width: 100%;
     height: 38px;
-    overflow: hidden;
-    transition: all 0.2s;
+    background-color: #000;
 }
-    #top_flow a{
-        white-space: nowrap;
-        line-height: 38px;
-        color: white;
-        font-size: 13px;
-    }
+.swiper-slide {
+    display: flex;
+    line-height: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 13px;
+    font-family: "sans-serif";
+    user-select: none;
+}
+
+.flow-wrap>a{
+    color: white;
+    margin-right: 120px
+}
+
 
 /* 헤더 시작 */
 header{
@@ -38,19 +46,20 @@ header{
     height: 80px;
     margin: 0 auto;
     z-index: 998;
-    background-color: aqua;
 }
+    /* 왼쪽 로고 영역 */
     .logo{
         position: absolute;
         top: 30px;
         left: 50px;
     }
 
+    /* 가운데 메인 메뉴 영역 */
     .nav_mid{
-        width: 567px;
+        width: 607px;
         margin: 0 auto;
     }
-
+        /* 메인 메뉴 상단 부분 css */
         .main_menu, .bar, .sub_menu{
             float: left;
             text-align: center;
@@ -59,56 +68,120 @@ header{
             overflow: hidden;
             padding: 0px;
         }
-
-            .main_menu strong{
+            .main_menu>strong{
                 font-size: 15px;
                 margin: 0 10px;
-                border-top: 3px solid transparent;
-                border-bottom: 3px solid transparent;
-                transition: all 0.5s;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+                transition: all 300ms;
                 cursor: pointer;
             }
-            .main_menu strong:hover{
-                border-top: 3px solid;
-                border-bottom: 3px solid;
+            .main_menu>strong:hover{
+                border-top: 2px solid;
+                border-bottom: 2px solid;
             }
-
-                .drop_down{
-                    display: none;
+        /* 드롭메뉴(메인메뉴 하단) 공통 영역 css */
+        .drop_body{
+            position: absolute;
+            text-align: left;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 0px;
+            overflow: hidden;
+            transition: all 0.2s ease-in-out;
+            background-color: white;
+            z-index: 999;
+        }
+        .drop_body.open{
+            height: auto;
+            overflow: hidden;
+            transition: all 0.2s ease-in-out;
+        }
+        .drop_down{
+            padding: 5px 0 35px 0;
+        }
+            /* 드롭메뉴 이미지 */
+            .drop_img_wrap{
+                width: 966px;
+                margin: 0 auto;
+            }
+                .drop_img{
+                    width: 320px;
+                    float: left;
+                    margin: 0 1px;
+                    transition: all 0.5s;
                 }
-                .drop_down.open{
-                    display: block;
-                    position: absolute;
-                    top: 80px;
-                    left: 0;
-                    width: 100%;
-                    padding: 5px 0 0 0;
-                    background-color: olive;
+                .drop_img:hover{
+                    filter: brightness(0.7);
                 }
-                    .drop_down_img{
-                        width: 1000px;
-                        margin: 0 auto;
+            /* 드롭메뉴 텍스트 */
+            .drop_list_wrap{
+                text-align: center;
+                height: auto;
+                line-height: normal;
+            }
+                /* 1단 구성 css */
+                .drop_list{
+                    display: inline-block;
+                    margin: 0 25px;
+                    vertical-align: top;
+                }
+                    .drop_list>a{
+                        padding: 5px 0;
+                        font-size: 15px;
+                        font-weight: 500;
                     }
-                    .drop_img{
-                        width: 320px;
-                        float: left;
-                        margin: 0 1px;
-                        transition: all 0.5s;
+                        .drop_list>a>strong{
+                            font-weight: 700;
+                        }
+                /* 2단 구성 css*/
+                #list_deep>li{
+                    text-align: left;
+                }
+                    .drop_sub_wrap{
+                        padding: 10px 0 0 0;
                     }
-                    .drop_img:hover{
-                        filter: brightness(0.7);
+                    .drop_sub_wrap dl dd{
+                        padding: 8px 0;
+                        font-size: 15px;
                     }
-
-
+                        .drop_sub_wrap dl dd a{
+                            color: #999;
+                        }
+                        .drop_sub_wrap dl dd a:hover{
+                            color: #000;
+                        }
+                    .dl_sub_title_1, .dl_sub_title_2{
+                        display: inline-block;
+                        margin-left: 4px;
+                    }
+                    .dl_sub_title_1{
+                        color: white;
+                        padding: 0 8px;
+                        height: 22px;
+                        line-height: 22px;
+                        background-color: black;
+                        border-radius: 4px;
+                        font-size: 10px;
+                        font-weight: 600;
+                        vertical-align: top;
+                    }
+                    .dl_sub_title_2{
+                        color: rgba(0, 0, 0, 0.2);
+                        font-size: 12px;
+                    }
+        /* 메인메뉴 서브 구역 css */
         .bar{
-            margin-right: 10px;
-            color: #eee;
+            margin: 0 20px 0 10px;
+            color: #ddd;
         }
         .sub_menu{
-            margin: 0 10px 0 0;
+            margin-right:20px;
             cursor: pointer;
         }
 
+    /* 오른쪽 서브 메뉴 구성 */
     .nav_right{
         position: absolute;
         display: flex;
@@ -116,14 +189,16 @@ header{
         gap: 5px;
         top: 17px;
         right: 45px;
-        width: 100px;
+        width: 120px;
     }
         .nav_right div{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
             box-sizing: border-box;
-
+        }
+        .right_menu{
+            color: #999;
         }
 
 
