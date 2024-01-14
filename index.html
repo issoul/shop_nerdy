@@ -24,12 +24,17 @@
 </head>
 <body>
     <!-- 상단 플로우 띠배너 -->
-    <div id="top_flow">
-        <a href="#" target="_self">
-            2024 뉴이어 세일, 최대 70% 할인!
-        </a>
-    </div>
+    <!--div id="top_flow">
+        <p class="flow_text" href="#" target="_self">
+        </p>
+    </!--div-->
 
+    <div class="top_flow">
+        <div class="swiper-slide">
+            <div class="flow-wrap">
+                <a href="#">2024 뉴이어 세일, 최대 70% 할인!</a>
+            </div>
+        </div>
     <!-- 헤더 시작 -->
     <header>
         <div class="header_wrap">
@@ -45,43 +50,114 @@
                 <ul class="nav_mid">
                     <li class="main_menu drop_up">
                         <strong style="color: blueviolet;">NEW</strong>
-                        <div class="drop_down">
-                            <ul>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_01.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_02.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_03.jpg" width="100%"></a></li>
-                            </ul>
+                        <div class="drop_body">
+                            <div class="drop_down">
+                                <ul class="drop_img_wrap">
+                                    <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_01.jpg" width="100%"></a></li>
+                                    <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_02.jpg" width="100%"></a></li>
+                                    <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_03.jpg" width="100%"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li class="main_menu"><strong>BEST</strong></li>
+                    <li class="main_menu">
+                        <strong>BEST</strong>
+                    </li>
                     <li class="main_menu drop_up">
                         <strong>APPAREL</strong>
-                        <div class="drop_down">
-                            <ul>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_03.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_02.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_01.jpg" width="100%"></a></li>
-                            </ul>
+                        <div class="drop_body">
+                            <div class="drop_down">
+                                <ul class="drop_list_wrap" id="list_deep">
+                                    <li class="drop_list"><a href="#"><strong>모든 제품 보기</strong></a></li>
+                                    <li class="drop_list">
+                                        <a href="#"><strong>아우터</strong></a>
+                                        <div class="drop_sub_wrap">
+                                            <dl>
+                                                <dd><a href="#">자켓/바람막이</a></dd>
+                                                <dd><a href="#">다운</a></dd>
+                                                <dd><a href="#">플리스</a></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="drop_list">
+                                        <a href="#"><strong>상의</strong></a>
+                                        <div class="drop_sub_wrap">
+                                            <dl>
+                                                <dd><a href="#">티셔츠</a></dd>
+                                                <dd><a href="#">트랙 탑</a></dd>
+                                                <dd><a href="#">스웻셔츠</a></dd>
+                                                <dd><a href="#">후드</a></dd>
+                                                <dd><a href="#">스웨터/가디건</a></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="drop_list">
+                                        <a href="#"><strong>하의</strong></a>
+                                        <div class="drop_sub_wrap">
+                                            <dl>
+                                                <dd><a href="#">트랙 팬츠</a></dd>
+                                                <dd><a href="#">우븐 팬츠</a></dd>
+                                                <dd><a href="#">스웻 팬츠</a></dd>
+                                                <dd><a href="#">반바지/스커트</a></dd>
+                                                <dd><a href="#">레깅스</a></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="drop_list">
+                                        <a href="#"><strong>2SET/세트</strong></a>
+                                        <span class="dl_sub_title_1">10% 할인</span>
+                                        <div class="drop_sub_wrap">
+                                            <dl>
+                                                <dd><a href="#">2SET</a></dd>
+                                                <dd><a href="#">트랙 세트</a></dd>
+                                                <dd><a href="#">윈드브레이커 세트</a></dd>
+                                                <dd><a href="#">스웻/후디 세트</a></dd>
+                                                <dd><a href="#">애슬레져 세트</a></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="drop_list">
+                                        <a href="#"><strong>애슬레져</strong></a>
+                                        <span class="dl_sub_title_2">NERDY FIT</span>
+                                        <div class="drop_sub_wrap">
+                                            <dl>
+                                                <dd><a href="#">2SET/세트</a></dd>
+                                                <dd><a href="#">브라탑</a></dd>
+                                                <dd><a href="#">티셔츠</a></dd>
+                                                <dd><a href="#">레깅스</a></dd>
+                                                <dd><a href="#">이너웨어</a></dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="drop_list"><a href="#"><strong>맞춤 제품 찾기</strong></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="main_menu drop_up">
                         <strong>SHOES</strong>
-                        <div class="drop_down">
-                            <ul>
-                                <li class="drop_list"><a href="#">전체</a></li>
-                                <li class="drop_list"><a href="#">운동화</a></li>
-                                <li class="drop_iist"><a href="#">슬라이드</a></li>
-                            </ul>
+                        <div class="drop_body">
+                            <div class="drop_down">
+                                <ul class="drop_list_wrap">
+                                    <li class="drop_list"><a href="#">전체</a></li>
+                                    <li class="drop_list"><a href="#">운동화</a></li>
+                                    <li class="drop_list"><a href="#">슬라이드</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="main_menu drop_up">
                         <strong>ACC</strong>
-                        <div class="drop_down">
-                            <ul>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_03.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_02.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_01.jpg" width="100%"></a></li>
-                            </ul>
+                        <div class="drop_body">
+                            <div class="drop_down">
+                                <ul class="drop_list_wrap">
+                                    <li class="drop_list"><a href="#">전체</a></li>
+                                    <li class="drop_list"><a href="#">가방</a></li>
+                                    <li class="drop_list"><a href="#">모자</a></li>
+                                    <li class="drop_list"><a href="#">래쉬가드</a></li>
+                                    <li class="drop_list"><a href="#">ETC</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="main_menu"><strong>OUTLET</strong></li>
@@ -89,12 +165,16 @@
                     <li class="sub_menu">LOOKBOOK</li>
                     <li class="sub_menu drop_up">
                         <normal>COMMUNITY</normal>
-                        <div class="drop_down">
-                            <ul>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_03.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_02.jpg" width="100%"></a></li>
-                                <li class="drop_img"><a href="#"><img src="./img/nav_ban_new_01.jpg" width="100%"></a></li>
-                            </ul>
+                        <div class="drop_body">
+                            <div class="drop_down">
+                                <ul class="drop_list_wrap">
+                                    <li class="drop_list"><a href="#">NOTICE</a></li>
+                                    <li class="drop_list"><a href="#">REVIEW</a></li>
+                                    <li class="drop_list"><a href="#">Q&A</a></li>
+                                    <li class="drop_list"><a href="#">FAQ</a></li>
+                                    <li class="drop_list"><a href="#">STORE</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
