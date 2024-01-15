@@ -3,7 +3,7 @@
 
 const ddup = document.querySelectorAll('.drop_up');
 const ddown = document.querySelectorAll('.drop_body');
-
+const dpopen = document.querySelectorAll('.drop_body.open')
 
 
     ddup[0].addEventListener('mouseover', ()=> {
