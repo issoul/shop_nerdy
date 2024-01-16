@@ -17,26 +17,37 @@ a:hover {
 }
 
 /* 상단 플로우 띠배너 */
-.top_flow{
-    width: 100%;
-    height: 38px;
-    background-color: #000;
-}
-.swiper-slide {
+.flow-text {
     display: flex;
-    line-height: 38px;
+    flex: 0 0 auto;
     white-space: nowrap;
     overflow: hidden;
     transition: 0.3s;
     font-size: 13px;
-    font-family: "sans-serif";
-    user-select: none;
-}
-
-.flow-wrap>a{
+    height: 38px;
+    line-height: 38px;
     color: white;
-    margin-right: 120px
+    background: black;
 }
+    .flow-text:hover .flow-wrap {
+    animation-play-state: paused;
+    cursor: pointer;
+    }
+    .flow-wrap {
+    animation: textLoop 8s linear infinite both;
+    margin-right: 120px;
+    }
+
+    @keyframes textLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-159%, 0, 0);
+        transform: translate3d(-159%, 0, 0);
+    }
+    }
 
 
 /* 헤더 시작 */
