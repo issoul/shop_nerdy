@@ -1,0 +1,18 @@
+#slider_model{
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0 0;
+    background-color: #f9fafd;
+}
+    #slider_model .notice{
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.35);
+        padding: 10px 0 0 50px;
+    }
+        .notice img{
+            vertical-align: top;
+            height: 35px;
+            margin-right: 5px;
+        }
