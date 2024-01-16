@@ -10,15 +10,16 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/index.css" >
+    <link rel="stylesheet" href="./css/main.css" >
     <!-- Javascript start -->
     <script type="module" src="./js/index.js" defer></script>
     <style>
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
         }
     </style>
 </head>
@@ -213,28 +214,83 @@
     </header>
 
     <main>
+        <!-- 메인 배너 시작 -->
         <section class="main_banner">
-            <a href="#">
-                <div class="main_b_wrap">
+            <div class="slide slide_wrap">
+                <div class="slide_item item1">
+                    <a href="#">
+                        <div class="main_b_wrap">
+                        </div>
+                        <div class="mb_txt">
+                            <p class="e1">NEW</p>
+                            <p class="e2">RISE ANEW, NERDY</p>
+                            <p class="e3">새로운 뮤즈 세븐틴 THE 8 과 함께한 23FW</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="mb_txt">
-                    <p class="e1">NEW</p>
-                    <p class="e2">RISE ANEW, NERDY</p>
-                    <p class="e3">새로운 뮤즈 세븐틴 THE 8 과 함께한 23FW</p>
+                <div class="slide_item item2">
+                    <a href="#">
+                        <div class="main_b_wrap">
+                        </div>
+                        <div class="mb_txt">
+                            <p class="e1"></p>
+                            <p class="e2"></p>
+                            <p class="e3"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide_item item3">
+                    <a href="#">
+                        <div class="main_b_wrap">
+                        </div>
+                        <div class="mb_txt">
+                            <p class="e1">01.13 - 03.31</p>
+                            <p class="e2">DISNEY x NERDY</p>
+                            <p class="e3">디즈니 100주년 기념 콜라보 컬렉션</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide_item item4">
+                    <a href="#">
+                        <div class="main_b_wrap">
+                        </div>
+                        <div class="mb_txt">
+                            <p class="e1">NEW</p>
+                            <p class="e2">OHTNYC 1st COLLAB</p>
+                            <p class="e3">널디와 OHTNYC의 첫번째 콜라보레이션 컬렉션</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide_item item5">
+                    <a href="#">
+                        <div class="main_b_wrap">
+                        </div>
+                        <div class="mb_txt">
+                            <p class="e1">01.09 - 01.18</p>
+                            <p class="e2">2024 NEW YEAR SALE</p>
+                            <p class="e3">신년 맞이 4가지 특별 혜택</p>
+                        </div>
+                    </a>
                 </div>
 
-            </a>
-            <div class="sss">
-            <div class="main_swiper_wrap">
-                <span class="main_swiper-bullet checked"></span>
-                <span class="main_swiper-bullet"></span>
-                <span class="main_swiper-bullet"></span>
-                <span class="main_swiper-bullet"></span>
-                <span class="main_swiper-bullet"></span>
-                <span class="main_swiper-bullet"></span>
-                <span class="main_swiper-bullet"></span>
+                <div class="slide_prev_button slide_button">◀</div>
+                <div class="slide_next_button slide_button">▶</div>
+                <ul class="slide_pagination"></ul>
             </div>
-        </div>
+
+        </section>
+
+        <!-- 모델컷 슬라이드 배너 -->
+        <section id="slider_model">
+            
+            <div class="notice">
+                <img src="./img/ico_finger3.png">
+                스와이프하여 원하는 제품을 골라보세요.
+            </div>
+
+            <div class="model_cut_wrapper">
+
+            </div>
         </section>
     </main>
 </body>
