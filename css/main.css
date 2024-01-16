@@ -1,9 +1,11 @@
+/* 모델컷 슬라이드 배너 */
 #slider_model{
     position: relative;
     overflow: hidden;
     padding: 40px 0 0;
     background-color: #f9fafd;
 }
+    /* 스와이프 안내문구 */
     #slider_model .notice{
         line-height: 40px;
         font-size: 14px;
@@ -16,3 +18,43 @@
             height: 35px;
             margin-right: 5px;
         }
+
+    /* 모델컷 표시 영역 */
+    .model_cut_wrapper { 
+        display: flex; 
+        overflow: hidden;
+    }
+    .model_cut_wrapper .rolling-list ul { 
+        display: flex;
+    }
+    .model_cut_wrapper .rolling-list ul li { 
+        width: 430px; 
+        height: 926px;
+        box-sizing: border-box; 
+        display: flex; 
+        align-items: center; 
+        flex-shrink: 0; 
+    }
+    .model_cut_wrapper .rolling-list ul li .image-wrap img { 
+        width: 100%;
+        height: 100%;
+    }
+
+    .rolling-list.original {
+        animation: rollingleft1 33s linear infinite;
+    }
+    .rolling-list.clone {
+        animation: rollingleft2 33s linear infinite;
+    }
+    
+    @keyframes rollingleft1 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-100%); }
+        50.01% { transform: translateX(100%); }
+        100% { transform: translateX(0); }
+    }
+    
+    @keyframes rollingleft2 {
+        0% { transition: translateX(0); }
+        100% { transform: translateX(-200%); }
+    }
