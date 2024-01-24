@@ -16,6 +16,10 @@ a:hover {
     text-decoration: none;
 }
 
+/* <uniquifier>: Use a uniquifier for the class name */
+/* <weight>: Use a value from 100 to 900 */
+
+
 /* 상단 플로우 띠배너 */
 .flow-text {
     display: flex;
@@ -51,7 +55,10 @@ a:hover {
 
 
 /* 헤더 시작 */
-header{
+.header_m{
+    display: none;
+}
+.header_pc{
     position: sticky;
     top: 0;
     height: 80px;
@@ -374,4 +381,83 @@ main{
             height: 300px;
             flex-shrink: 0;
             transition: left 0.15s;
+        }
+
+
+/* 푸터 */
+.footer_m{
+    display: none;
+}
+.footer_pc{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #eee;
+    padding: 60px 0;
+    font-size: 13px;
+}
+    .footer_pc .footer_wrap{
+        width: 1200px;
+        height: 180px;
+        margin: 0 auto;
+    }
+        .footer_pc .footer_content_wrap{
+            width: 1200px;
+            display: flex;
+            flex-flow: row nowrap;
+            font-weight: 500;
+            line-height: 1.666;
+            color: #555;
+        }
+            .footer_pc .company_info{
+                width: 740px;
+            }
+                .f_logo{
+                    margin-bottom: 20px;
+                }
+
+            .footer_pc .footer_gnb{
+                width: 120px;
+                margin-right: 20px;
+                text-align: left;
+                vertical-align: top;
+            }
+                .footer_gnb li{
+                    padding: 0 0 10px 0;
+                }
+
+            .footer_pc .tel_info{
+                width: 180px;
+                text-align: left;
+            }
+                .tel_info .tel{
+                    font-size: 20px;
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    color: #000;
+                }
+                .tel_info .tel2{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+            
+            .btm_sns{
+                padding: 20px 0 0;
+                font-size: 20px;
+            }
+                .btm_sns li{
+                    color: #000;
+                    margin-right: 16px;
+                    display: inline-block;
+                }
+
+
+        .copyright{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0 0;
+        }
+
+        .copyright span{
+            float: right;
         }
